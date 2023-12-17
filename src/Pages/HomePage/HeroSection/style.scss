@@ -1,0 +1,25 @@
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 45vh;
+
+    .categories {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        ul {
+
+            li {
+                padding: 5px;
+            }
+        }
+    }
+
+    .placard {
+        background-image: url("https://s.yimg.com/ny/api/res/1.2/xwts94K5zBSwCZKAZIO.GQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/footwear_news_642/c344f36d5e2cb14ebba91e6322d9a957");
+        background-position: 65% 97%;
+        object-fit: cover;
+
+    }
+}

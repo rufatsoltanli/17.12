@@ -1,0 +1,103 @@
+header {
+    .headerContainter {
+        background-color: black;
+        color: white;
+
+        .headerContent {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            padding: 15px 0;
+
+            .sale {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                width: 90%;
+
+                .shopNow {
+                    text-decoration: underline;
+                    font-weight: 700;
+                }
+            }
+
+            .leanguage {
+                width: 10%;
+
+                i {
+                    padding: 0 4px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    nav {
+        .navContainer {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2% 0;
+            display: grid;
+            grid-template-columns: 2fr 3fr 3fr;
+            align-items: center;
+
+            .logo {
+                font-size: 30px;
+                font-weight: 900;
+            }
+
+            .links {
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    color: rgb(0, 0, 0);
+                    font-weight: 500;
+                }
+            }
+
+            .searchWishlistCart {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+
+                .searchPanel {
+                    padding: 10px;
+                    background-color: rgb(219, 219, 219);
+                    border-radius: 5px;
+
+                    .seacrhConent {
+                        input {
+                            border: none;
+                            outline: none;
+                            background-color: rgb(219, 219, 219);
+                            padding: 0 10px;
+
+                            &::placeholder {
+                                color: rgb(151, 151, 151);
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                }
+
+                .wishlist {
+                    i {
+                        color: black;
+
+                        font-size: 27px;
+                    }
+                }
+
+                .cart {
+                    i {
+                        color: black;
+                        font-size: 27px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.basketCont {
+
+
+    h1 {
+        text-align: center;
+    }
+
+    .cardCont {
+        min-height: 70vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .card {
+            width: 300px;
+            height: 400px;
+            // border: 1px solid rgb(190, 190, 190);
+            border-radius: 10px;
+
+            * {
+                padding: 10px 0;
+            }
+
+            .price {
+                text-align: center;
+                width: 100%;
+            }
+
+            .image {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .count {
+                margin: 0 30%;
+
+                * {
+                    margin: 0 5px;
+                }
+
+                button {
+                    width: 40px;
+                    background-color: rgb(196, 196, 196);
+                    border: none;
+
+                }
+            }
+
+            .removeFromBasket {
+
+                background-color: rgba(255, 0, 0, 0.123);
+                text-align: center;
+                color: red;
+            }
+        }
+    }
+}
