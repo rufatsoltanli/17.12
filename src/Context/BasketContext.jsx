@@ -15,7 +15,7 @@ function BasketProvider({ children }) {
         basket[index].count++
     }
 
-   function removeFromBasket(item) {
+    function removeFromBasket(item) {
         setBasket(basket.filter((x) => x !== item))
     }
 
