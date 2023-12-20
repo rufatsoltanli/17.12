@@ -38,8 +38,26 @@
     gap: 10px;
     border: 1px solid gray;
     width: max-content;
+    transition: .4s;
 
     .icon {
         text-align: center;
+    }
+
+    &:hover {
+        background-color: #DB4444;
+
+    }
+
+    &:hover .text {
+        color: white;
+    }
+
+    &:hover .icon {
+        svg {
+            * {
+                stroke: white;
+            }
+        }
     }
 }

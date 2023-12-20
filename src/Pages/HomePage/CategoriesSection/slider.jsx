@@ -9,11 +9,15 @@ function Slider() {
             <Splide hasTrack={false} aria-label="..."
                 options={{
                     type: 'loop',
-                    rewind: true,
-                    autoplay: true,
+                    // rewind: true,
+                    focus: 'center',
                     pagination: false,
-                    perPage: 3,
-                    width: 930
+                    perPage: 4,
+                    width: 1500,
+                    drag: 'free',
+                    autoScroll: {
+                        speed: 2
+                    },
                 }}>
                 <div className="slideCategories">
                     <SplideTrack>

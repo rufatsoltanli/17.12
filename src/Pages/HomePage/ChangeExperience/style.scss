@@ -1,0 +1,39 @@
+#changeExperience {
+    height: 60vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+
+    * {
+        padding: 5%;
+    }
+
+    .img {
+        padding: 0 5%;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        .category {
+            color: #00FF66;
+        }
+
+        .Enchance {
+            font-size: 50px;
+            font-weight: 900;
+            color: white;
+        }
+
+        .buyNowButton {
+            width: max-content;
+            margin: 5%;
+            padding: 20px 35px;
+            background-color: #00FF66;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}

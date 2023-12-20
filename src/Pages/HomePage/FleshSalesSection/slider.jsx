@@ -3,16 +3,13 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { BasketContext } from '../../../Context/BasketContext';
 import { WishlistContext } from '../../../Context/WishlistContext';
+import { FetchContext } from '../../../Context/FetchContext';
+
 
 function Slider() {
-    const [apiData, setApiData] = useState([])
-    useEffect(() => {
-        fetch("https://6573ac96f941bda3f2af125e.mockapi.io/juan-store/api/v1/products")
-            .then(res => res.json())
-            .then(data => setApiData(data))
-    }, [])
 
-    const forSlider = apiData.slice(0, 9)
+
+    const { apiData, setApiData } = useContext(FetchContext)
     const { addToBasket } = useContext(BasketContext)
     const { checkIfWished, toggleItemInWishlist, wishlist } = useContext(WishlistContext)
 

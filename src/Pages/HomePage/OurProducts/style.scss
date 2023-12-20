@@ -1,14 +1,6 @@
-#flashSales {
-    margin: 5% 0;
-
-    .flashSales {
-        h1 {
-            font-size: 50px;
-        }
-    }
-
-    .redButton {
-        margin: 0 auto;
+#ourProducts {
+    h1 {
+        font-size: 50px;
     }
 
     .sliderCont {
@@ -32,10 +24,11 @@
                 position: relative;
                 height: 60%;
 
-                .discount {
-                    font-weight: 600;
+                .new {
+                    position: fixed;
+                    font-weight: 400;
                     color: white;
-                    background-color: #DB4444;
+                    background-color: #00FF66;
                     width: max-content;
                     padding: 7px;
                     border-radius: 5px;
@@ -100,42 +93,4 @@
             }
         }
     }
-
-}
-
-.addToWishlist {
-    margin-left: 10px;
-    border-radius: 50%;
-    width: max-content;
-    padding: 24px;
-    position: relative;
-    transition: 1s;
-
-    i {
-        position: absolute;
-        color: red;
-        opacity: 0;
-        transition: .4s;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%);
-        font-size: 34px;
-    }
-
-    .visible {
-        opacity: 1;
-    }
-}
-
-.splide__arrow {
-    // position: absolute;
-    top: -30px;
-
-
-}
-
-
-.splide__arrow--prev {
-    left: auto;
-    right: 55px !important;
 }
